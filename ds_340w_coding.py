@@ -25,6 +25,9 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.pipeline import make_pipeline
+from transformers import DistilBertTokenizer, DistilBertModel
 from transformers import BertTokenizer, BertModel
 import torch
 
@@ -147,26 +150,6 @@ processed_df = pd.DataFrame(preprocessed_data, columns=["labels", "language", "t
 
 # Display the first few rows
 print(processed_df.head())
-
-import numpy as np
-import torch
-from sklearn.preprocessing import LabelEncoder, StandardScaler
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-from sklearn.pipeline import make_pipeline
-from sklearn.svm import SVC
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.neural_network import MLPClassifier
-from transformers import DistilBertTokenizer, DistilBertModel
-
-# Initialize device
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-# Load pre-trained DistilBERT model and tokenizer
-tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-multilingual-cased')
-bert_model = DistilBertModel.from_pretrained('distilbert-base-multilingual-cased').to(device)
 
 # Encode labels
 label_encoder = LabelEncoder()
