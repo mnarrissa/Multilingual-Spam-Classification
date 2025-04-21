@@ -1,0 +1,1 @@
+This project enhances multilingual spam detection using DistilBERT embeddings and classical ML models (XGBoost, SVM, etc.). It supports 5 languages (English, Spanish, Arabic, Russian, Portuguese) and outperforms traditional single-language approaches.
