@@ -25,12 +25,15 @@
 - Best Model (XGBoost on Combined Data)
 - Best model for English, Spanish, Arabic is SVM and for Russian and Portuguese is XGBoost
 
-4. Key Improvements Over Baseline
+4. Interpretability (SHAP Analysis)
+- SHAP summary plot shows the top influential embedding features identified for spam classification.
+
+5. Key Improvements Over Baseline
 - Multilingual Support (vs. English-only in prior work)
 - Higher Robustness (XGBoost + DistilBERT vs. Logistic Regression)
 - Explainable AI (SHAP analysis for model transparency)
 
-5. Future Work
+6. Future Work
 - Fine-tune DistilBERT for low-resource languages (Arabic/Russian).
 - Deploy as an API for real-time spam filtering.
 - Expand to more languages (e.g., Chinese, Hindi).
