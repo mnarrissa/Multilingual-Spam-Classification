@@ -1,5 +1,5 @@
-1. About
-This project enhances multilingual spam detection using DistilBERT embeddings and classical ML models (XGBoost, SVM, etc.). It supports 5 languages (English, Spanish, Arabic, Russian, Portuguese) and outperforms traditional single-language approaches. The stopwords for each language are located in the arabic.txt, spanish.txt, russian.txt, and portuguese.txt files.
+1. About:
+- This project enhances multilingual spam detection using DistilBERT embeddings and classical ML models (XGBoost, SVM, etc.). It supports 5 languages (English, Spanish, Arabic, Russian, Portuguese) and outperforms traditional single-language approaches. The stopwords for each language are located in the arabic.txt, spanish.txt, russian.txt, and portuguese.txt files.
 
 2. Key Features:
 
