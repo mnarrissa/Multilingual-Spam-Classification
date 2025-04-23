@@ -1,3 +1,0 @@
-export GIT_COMMITTER_DATE="Sun Apr 20 10:34 2025 +0100"
-git commit --amend --no-edit --date="Sun Apr 20 12:34 2025 +0100"
-git push origin branch-name --force
