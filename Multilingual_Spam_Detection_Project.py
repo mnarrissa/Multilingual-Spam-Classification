@@ -116,7 +116,7 @@ for index, row in df.iterrows():
 processed_df = pd.DataFrame(processed_data, columns=["labels", "language", "text"])
 
 # Encode labels
-processed_df['labels'] = processed_df['labels'].map({'ham': 0, 'spam': 1}
+processed_df['labels'] = processed_df['labels'].map({'ham': 0, 'spam': 1})
 
 # Initialize DistilBERT tokenizer and model
 tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-multilingual-cased')
